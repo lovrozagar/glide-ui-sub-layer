@@ -1,6 +1,6 @@
-import { SUB_LAYER_BASE_STYLE } from '@/constants/constants'
-import { SubLayerProps } from '@/types/types'
 import React from 'react'
+import { SubLayerProps } from '../types/types'
+import { SUB_LAYER_BASE_STYLE } from '../constants/constants'
 
 const SubLayer: React.FC<SubLayerProps> = ({ children, style, ...otherProps }) => {
   const [parentBorderRadius, setParentBorderRadius] = React.useState<string>('0px')
